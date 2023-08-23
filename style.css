@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Hind Siliguri", sans-serif;
+  overflow-x: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+/* BODY */
+
+body {
+  height: 1000px;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+}
+
+.title {
+  /* margin-bottom: 100px; */
+  /* padding-bottom: 300px; */
+  text-align: center;
+  /* margin-top: 100px; */
+  text-transform: uppercase;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0 0 200px 0;
+}
+
+/* .img {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  border-radius: 60px;
+
+  filter: grayscale(100%);
+} */
+
+.About-me h2,
+.project-title {
+  font-size: 0.6rem;
+  color: rgb(177, 174, 174);
+  text-decoration: line-through;
+}
+
+.About-me p {
+  font-size: 0.8rem;
+  padding: 20px 0;
+  line-height: 2;
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Source Code Pro", monospace;
+  overflow: hidden; /* Hide the text until the animation starts */
+  width: max-content;
+  text-align: center;
+  margin: 250px auto;
+  letter-spacing: 0.15em; /* Add spacing between the characters */
+  white-space: nowrap; /* keeps text in one line */
+  text-transform: uppercase; /* transforms text to uppercase*/
+  animation: typing 10s steps(36, end);
+}
+
+/* The typewriter animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* ACCORDION */
+
+.accordion {
+  padding: 20px 0;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  /* color: #7288a2; */
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  color: white;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 40em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content span {
+  margin: 1em 0;
+}
