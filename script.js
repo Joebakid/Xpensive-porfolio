@@ -11,3 +11,21 @@ function toggleAccordion() {
   }
 }
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+//typer writer
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+  setTimeout(() => {
+    text.textContent = "money";
+  }, 0);
+  setTimeout(() => {
+    text.textContent = "Fun";
+  }, 4000);
+  setTimeout(() => {
+    text.textContent = "pleasure";
+  }, 8000);
+};
+
+textLoad();
+setInterval(textLoad, 12000);
