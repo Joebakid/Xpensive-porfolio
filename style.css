@@ -218,3 +218,7 @@ figure img {
 .title-for-mini-topic {
   text-transform: uppercase;
 }
+
+.paragraph-project p {
+  color: #a4a0a0;
+}
