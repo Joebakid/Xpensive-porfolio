@@ -214,3 +214,7 @@ figure img {
   width: 100%;
   height: 40%;
 }
+
+.title-for-mini-topic {
+  text-transform: uppercase;
+}
