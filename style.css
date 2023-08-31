@@ -1,276 +1,168 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   overflow-x: hidden;
+}
+
+/* UTILITY */
+.my-1 {
+  margin: 10px 0;
+}
+
+.my-2 {
+  margin: 15px 0;
+}
+
+.my-3 {
+  margin: 20px 0;
+}
+
+.my-4 {
+  margin: 25px 0;
+}
+
+.my-3 {
+  margin: 30px 0;
+}
+
+.my-4 {
+  margin: 70px 0;
+}
+
+.mx-1 {
+  margin: 0 10px;
+}
+
+.mx-2 {
+  margin: 0 15px;
+}
+
+.mx-2 {
+  margin: 0 25px;
+}
+
+.py-1 {
+  padding: 5px 0;
+}
+
+.py-2 {
+  padding: 10px 0;
+}
+
+.py-3 {
+  padding: 15px 0;
+}
+
+.py-4 {
+  padding: 20px 0;
+}
+
+.py-5 {
+  padding: 25px 0;
+}
+
+.px-3 {
+  padding: 0 5px;
+}
+
+.px-4 {
+  padding: 0 15px;
+}
+
+.px-5 {
+  padding: 0 25px;
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.xl {
+  font-size: 1.1rem;
+}
+
+/* BTN */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 /* CONTAINER */
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 20px 0px;
+}
+
+main {
+  margin: 100px 0;
+}
+
+.bg-img {
+  background-image: url(img/320335980_1835209066824462_1619248660321727093_n.webp.jpg);
+  filter: grayscale(100%);
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.title-name {
+  position: absolute;
+  bottom: 0;
+  bottom: 40px;
+  right: 10px;
+  color: #f7f1f1;
+  font-weight: 900;
+  font-family: inherit;
 }
 
 /* BODY */
 
 body {
-  height: 1000px;
+  /* height: 1000px; */
   color: white;
   background-color: black;
-  overflow-x: hidden;
+
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
 
-header {
-  height: 100vh;
+p {
+  padding: 18px 0;
+  line-height: 1.9;
+  font-size: 20px;
 }
 
-.title {
-  /* margin-bottom: 100px; */
-  /* padding-bottom: 300px; */
-  text-align: center;
-  /* margin-top: 100px; */
-  text-transform: uppercase;
-  font-weight: bolder;
+/* Other Classes */
+.hello-first-el {
+  color: #444;
+  font-size: 40px;
 }
 
-.img {
-  width: 300px;
-  height: 300px;
-}
-.sub-title {
-  text-align: center;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  padding: 0 0 200px 0;
-}
-
-.text {
-  position: relative;
-  font-weight: bolder;
-}
-
-.first-text {
-}
-
-.sec-text:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  border-left: 2px solid rgb(236, 236, 243);
-  animation: animate 4s steps(12) infinite;
-}
-
-.sec-text {
-  color: rgb(18, 167, 80);
-}
-
-@keyframes animate {
-  40%,
-  60% {
-    left: 100%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-/* .img {
-  width: 400px;
-  height: 200px;
-  margin-bottom: 200px;
-  margin-top: 100px;
+.icon-container {
   display: flex;
-  justify-content: center;  
-  align-items: center;  
-  
+  justify-content: space-between;
+  padding: 100px 0;
 }
 
-.img img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  border-radius: 60px;
-
-  filter: grayscale(100%);
-} */
-
-.About-me {
-  padding-bottom: 50px;
-}
-
-.About-me h2,
-.project-title {
-  font-size: 0.9rem;
-  color: rgb(177, 174, 174);
-  text-decoration: line-through;
-}
-
-.About-me p {
-  font-size: 19px;
-  padding: 20px 0;
-  line-height: 2;
-}
-
-.title {
-  font-size: 14px;
-  font-weight: 800;
-  font-family: "Source Code Pro", monospace;
-  /* overflow: hidden;  */
-  width: max-content;
-  text-align: center;
-  margin: 250px auto;
-  letter-spacing: 0.15em; /* Add spacing between the characters */
-  white-space: nowrap; /* keeps text in one line */
-  text-transform: uppercase; /* transforms text to uppercase*/
-  animation: typing 10s steps(36, end);
-}
-
-/* The typewriter animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* ACCORDION */
-
-.accordion {
-  padding: 20px 0;
-}
-
-.accordion .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden; /* Ensure content doesn't overflow during animation */
-}
-
-.accordion .accordion-item button[aria-expanded="true"] {
-  border-bottom: 1px solid #03b5d2;
-}
-
-.accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border: none;
-  background: none;
-  outline: none;
-  transition: color 0.3s ease-in-out; /* Add color transition */
-}
-
-.accordion button:hover,
-.accordion button:focus {
-  cursor: pointer;
-  color: #03b5d2;
-}
-
-.accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
-  color: white;
-}
-
-.accordion button[aria-expanded="true"] {
-  color: #03b5d2;
-}
-
-.accordion button .icon::after {
-  width: 0;
-}
-
-.accordion button[aria-expanded="true"] + .accordion-content {
-  opacity: 1;
-  max-height: 40em;
-  transition: all 0.3s ease-in-out; /* Add animation transition */
-  will-change: opacity, max-height;
-}
-
-.accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Add animation transition */
-  will-change: opacity, max-height;
-}
-
-.accordion-content span {
-  /* padding: 30px 0; */
-}
-
-.accordion .accordion-content span {
-  /* margin: 1em 0; */
-  /* padding: 20px 0; */
-}
-
-.pdf-group {
-}
-
-.img {
-  width: 100%;
-  height: 90%;
-}
-
-.accordion-content {
-  border: 2px solid white;
-  /* border-radius: 10px; */
-  /* margin: 30px 0; */
-  width: 100%;
-  margin: 10px auto;
-  padding: 0px 0px;
-}
-
-.second-part {
-  background-color: rgb(178, 175, 175);
-  /* padding: 30px 0; */
-  margin-top: -10px;
-  color: black;
-  padding: 10px 20px;
-}
-
-.second-part h2 {
-  /* font-size: 14px; */
-  font-weight: bold;
-  padding: 2px 0;
-}
-
-.second-part p {
-  padding: 5px 0;
-}
-
-.link-webpage {
-  font-weight: bold;
-  text-decoration: none;
-  background-color: #03b5d2;
-  padding: 5px 10px;
-  /* border-radius: 10px; */
-}
-
-@media screen and (min-width: 1037px) {
-  .container {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px 0px;
-  }
-
-  .accordion-content {
-    width: 60%;
-    margin: 10px auto;
-    padding: 0px 0px;
-  }
+/* ICONS */
+.icon {
+  width: 100px;
+  height: 100px;
+  color: blue;
 }
