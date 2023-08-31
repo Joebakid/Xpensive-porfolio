@@ -113,13 +113,14 @@ main {
 }
 
 .bg-img {
-  background-image: url(img/320335980_1835209066824462_1619248660321727093_n.webp.jpg);
+  background-image: url(img/pexels-khoa-võ-6404665.jpg);
   filter: grayscale(100%);
-  padding: 300px 0;
+  padding: 200px 0;
+  height: 30%;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
-  object-position: bottom;
+  object-position: left;
   font-size: 25px;
 }
 
@@ -129,7 +130,7 @@ main {
   top: 0;
   /* bottom: 40px; */
   left: 0px;
-  color: #faf9f9;
+  color: #faf7f7;
   font-weight: 900;
   font-family: inherit;
   padding: 10px 10px;
@@ -140,12 +141,13 @@ main {
   left: 0;
   position: absolute;
   padding: 10px 10px;
+  color: black;
 }
 .title-name-2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: blueviolet;
+  color: rgb(5, 17, 57);
   filter: grayscale(0);
   padding: 10px 10px;
 }
@@ -163,7 +165,7 @@ body {
 
 p {
   padding: 18px 0;
-  line-height: 1.9;
+  line-height: 2.1;
   font-size: 20px;
 }
 
