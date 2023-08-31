@@ -115,20 +115,39 @@ main {
 .bg-img {
   background-image: url(img/320335980_1835209066824462_1619248660321727093_n.webp.jpg);
   filter: grayscale(100%);
-  padding: 200px 0;
+  padding: 300px 0;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+  object-position: bottom;
+  font-size: 25px;
 }
 
 .title-name {
   position: absolute;
-  bottom: 0;
-  bottom: 40px;
-  right: 10px;
-  color: #f7f1f1;
+  /* bottom: 0; */
+  top: 0;
+  /* bottom: 40px; */
+  left: 0px;
+  color: #faf9f9;
   font-weight: 900;
   font-family: inherit;
+  padding: 10px 10px;
+}
+
+.title-name-1 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 10px 10px;
+}
+.title-name-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: blueviolet;
+  filter: grayscale(0);
+  padding: 10px 10px;
 }
 
 /* BODY */
