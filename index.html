@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Elizabeth Godfrey</title>
   </head>
   <body>
     <header>
       <div class="py-5 inner-container bg-img">
-        <h2 class="title-name">Welcome</h2>
-        <h2 class="title-name-1">To</h2>
-        <h2 class="title-name-2">My Porfolio</h2>
+        <h2
+          class="title-name"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-center"
+        >
+          Welcome
+        </h2>
+        <h2 class="title-name-1" data-aos="fade-right">To</h2>
+        <h2 class="title-name-2" data-aos="fade-left">My Porfolio</h2>
       </div>
       <div class="container">
         <div class="py-5 inner-container">
@@ -195,6 +202,7 @@
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -203,4 +211,7 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
