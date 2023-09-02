@@ -324,6 +324,10 @@ figure img {
   border-radius: 50%;
 }
 
+.icon-card:hover {
+  background-color: var(--dark-blue);
+}
+
 .card-p {
   font-size: 13px;
   padding-bottom: 0;
@@ -391,5 +395,10 @@ footer .container {
     width: 60%;
     margin: 0 auto;
     padding: 20px 0px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
