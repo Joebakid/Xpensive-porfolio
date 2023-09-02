@@ -215,7 +215,11 @@ p {
 .child-link {
   text-decoration: none;
   color: var(--white);
-  padding: 50px 25px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-project {
@@ -330,11 +334,15 @@ footer .container {
   padding: 70px 0;
 }
 
+.footer-mail {
+  color: var(--blue);
+}
+
 .footer-mail,
 .socials-footer {
   text-decoration: none;
   font-size: 20px;
-  color: var(--blue);
+  /* color: var(--blue); */
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
