@@ -215,6 +215,7 @@ p {
 .child-link {
   text-decoration: none;
   color: var(--white);
+  padding: 50px 25px;
 }
 
 .btn-project {
@@ -229,7 +230,7 @@ p {
   width: 80%;
   font-weight: bolder;
   font-family: inherit;
-  margin: 20px 30px;
+  /* margin: 20px 30px; */
   font-size: 17px;
   text-decoration: none;
   display: flex;
@@ -257,7 +258,7 @@ p {
 figure img {
   width: 100%;
   border-image-width: auto;
-  height: 40%;
+  height: 20%;
 }
 
 .title-for-mini-topic {
@@ -266,7 +267,7 @@ figure img {
 
 .paragraph-project p {
   color: var(--project-p);
-  padding: 0px 20px;
+  padding: 10px 0px;
 }
 
 .paragraph-project {
