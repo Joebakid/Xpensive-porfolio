@@ -128,14 +128,14 @@ main {
 }
 
 .bg-img {
-  background-image: url(img/pexels-khoa-võ-6404665.jpg);
+  background-image: url(img/solar.jpg);
   filter: grayscale(100%);
   padding: 200px 0;
   height: 30%;
   background-repeat: no-repeat;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
-  object-position: left;
+  object-position: top;
   font-size: 25px;
 }
 
@@ -156,15 +156,19 @@ main {
   left: 0;
   position: absolute;
   padding: 10px 10px;
-  color: var(--dark);
+  color: var(--white);
 }
 .title-name-2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: var(--title-name-2);
+  color: var(--white);
   filter: grayscale(0);
   padding: 10px 10px;
+}
+
+.inner-container {
+  margin: 50px 0;
 }
 
 /* BODY */
@@ -363,6 +367,29 @@ footer .container {
   margin-top: 50px;
 }
 
+.container-about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
 /* RESPONSIVENESS- DESKROP */
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+
+  .container-about {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0px;
+  }
+
+  .container-desktop {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
 }
