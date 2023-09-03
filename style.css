@@ -317,6 +317,10 @@ figure img {
   background-color: var(--project-p);
 }
 
+.card:hover .icon-card {
+  background-color: var(--dark-blue);
+}
+
 .icon-card {
   background-color: var(--project-p);
   padding: 10px 10px;
@@ -360,7 +364,7 @@ footer .container {
 
 .footer-mail:hover,
 .socials-footer:hover {
-  color: var(--white);
+  color: var(--dark-blue);
 }
 
 .container-socials {
