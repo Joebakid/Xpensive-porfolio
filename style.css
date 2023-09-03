@@ -364,7 +364,7 @@ footer .container {
 
 .footer-mail:hover,
 .socials-footer:hover {
-  color: var(--dark-blue);
+  color: var(--project-p);
 }
 
 .container-socials {
