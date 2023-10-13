@@ -94,6 +94,15 @@ p {
   padding: 10px 0;
 }
 
+.main-content__tech {
+  margin: 30px 10px;
+}
+
+.main-content__tech-list li {
+  list-style: circle;
+  /* padding: 20px; */
+}
+
 .sub-heading-expect {
   font-size: 30px;
 }
