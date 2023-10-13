@@ -31,6 +31,7 @@ p {
 }
 
 .nav-bar {
+  padding-bottom: 40px;
 }
 
 .nav-bar__wrapper {
@@ -47,6 +48,11 @@ p {
 
 .nav-bar__link {
   color: black;
+  transition: all 0.3s ease-in;
+}
+
+.nav-bar__link:hover {
+  color: #585757;
 }
 
 .main-content {
@@ -133,6 +139,7 @@ p {
 /* RESPONSIVENESS- DESKROP */
 @media screen and (min-width: 1200px) {
   .container {
+    width: 60%;
   }
 
   .footer-wrapper {
@@ -148,7 +155,10 @@ p {
   }
 
   .main-card-wrapper {
-    display: flex;
-    /* grid-template-columns: 50% 50%; */
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    /* display: flex;
+    flex-wrap: wrap; */
   }
 }
