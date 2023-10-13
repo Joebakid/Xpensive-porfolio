@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Porfolio</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <nav class="nav-bar">
+        <nav
+          class="nav-bar"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <ul class="nav-bar__wrapper">
             <li class="nav-bar__item">
               <a
@@ -34,8 +40,21 @@
     </header>
     <main class="main-content">
       <section class="container">
-        <h1 class="main-content__intro">Hey,</h1>
-        <h1 class="main-content__name">I'm Elizabeth</h1>
+        <h1
+          class="main-content__intro"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Hey,
+        </h1>
+        <h1
+          class="main-content__name"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          I'm Elizabeth
+        </h1>
 
         <div class="intro">
           <h3 class="intro__text">
@@ -87,24 +106,42 @@
     </main>
 
     <main>
-      <section class="main-card-wrapper container">
-        <div class="main__card-general">
-          I’ll bring colour, big energy and fresh thinking.
-        </div>
+      <section class="container">
+        <div class="main-card-wrapper">
+          <div
+            class="main__card-general"
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
+            I’ll bring colour, big energy and fresh thinking.
+          </div>
 
-        <div class="main__card-general bg-color-card-second">
-          Learn, challenge and reconnect the dots — joining your team with
-          conviction and openness.
-        </div>
+          <div
+            class="main__card-general bg-color-card-second"
+            data-aos="fade-left"
+            data-aos-once="true"
+          >
+            Learn, challenge and reconnect the dots — joining your team with
+            conviction and openness.
+          </div>
 
-        <div class="main__card-general bg-color-card-third">
-          Teach teams to move at velocity and have a hell of a lot of fun doing
-          it.
-        </div>
+          <div
+            class="main__card-general bg-color-card-third"
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
+            Teach teams to move at velocity and have a hell of a lot of fun
+            doing it.
+          </div>
 
-        <div class="main__card-general bg-color-card-fourth">
-          Recognise potential — pushing people to become better than they ever
-          thought possible.
+          <div
+            class="main__card-general bg-color-card-fourth"
+            data-aos="fade-left"
+            data-aos-once="true"
+          >
+            Recognise potential — pushing people to become better than they ever
+            thought possible.
+          </div>
         </div>
       </section>
     </main>
@@ -143,4 +180,8 @@
     </footer>
   </body>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

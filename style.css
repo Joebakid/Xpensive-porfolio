@@ -101,12 +101,13 @@ p {
 .main__card-general {
   background-color: rgb(138, 216, 192);
   opacity: 0.758526;
-  transform: scale(0.879263) translateZ(0px);
+  /* transform: scale(0.879263) translateZ(0px); */
   padding: 30px 30px 150px 30px;
   border-radius: 30px;
-  width: 100%;
+  /* width: 100%; */
   font-weight: bold;
   font-size: 30px;
+  margin: 30px 0;
 }
 
 .bg-color-card-second {
@@ -139,7 +140,7 @@ p {
 /* RESPONSIVENESS- DESKROP */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 60%;
+    width: 70%;
   }
 
   .footer-wrapper {
@@ -156,9 +157,12 @@ p {
 
   .main-card-wrapper {
     display: grid;
-
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
+    gap: 50px;
     /* display: flex;
     flex-wrap: wrap; */
+  }
+
+  .bg-color-card-second {
   }
 }
