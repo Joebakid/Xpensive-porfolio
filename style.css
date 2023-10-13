@@ -94,12 +94,27 @@ p {
   padding: 10px 0;
 }
 
+.bar-tech {
+  display: block;
+  width: 30px;
+  height: 2px;
+
+  background-color: black;
+}
+
+.tech-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .main-content__tech {
   margin: 30px 10px;
 }
 
-.main-content__tech-list li {
+.main-content__tech-list {
   list-style: circle;
+
   /* padding: 20px; */
 }
 
