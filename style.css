@@ -13,10 +13,10 @@
   --primary-text: white;
 }
 
-.light-mode {
+/* .light-mode {
   --bgc-color: white;
   --primary-text: black;
-}
+} */
 
 /*  */
 
@@ -27,7 +27,7 @@
 }
 
 p {
-  color: #585757;
+  color: rgb(150, 147, 147);
 }
 
 .nav-bar {
@@ -47,8 +47,9 @@ p {
 }
 
 .nav-bar__link {
-  color: black;
+  color: rgb(150, 147, 147);
   transition: all 0.3s ease-in;
+  font-size: 14px;
 }
 
 .nav-bar__link:hover {
@@ -113,8 +114,8 @@ p {
 }
 
 .main-content__tech-list {
-  list-style: circle;
-
+  /* list-style: circle; */
+  padding: 20px 0;
   /* padding: 20px; */
 }
 
@@ -159,6 +160,11 @@ p {
 .hidden {
   visibility: hidden;
   width: 0;
+}
+
+.dark-mode {
+  visibility: hidden;
+  display: none;
 }
 
 /* RESPONSIVENESS- DESKROP */
