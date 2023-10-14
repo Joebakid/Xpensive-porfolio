@@ -12,6 +12,7 @@ function enableLightMode() {
   bar.forEach(function (bar) {
     bar.style.background = "black";
   });
+
   localStorage.setItem("mode", "light");
 }
 
@@ -30,11 +31,11 @@ function enableDarkMode() {
 light.addEventListener("click", toggle);
 
 function toggle() {
-  if (light.textContent === "Light") {
-    light.textContent = "Dark";
+  if (light.textContent === "Dark") {
+    light.textContent = "Light";
     enableDarkMode();
   } else {
-    light.textContent = "Light";
+    light.textContent = "Dark";
     enableLightMode();
   }
 }
@@ -42,8 +43,8 @@ function toggle() {
 //LOCAL STORAGE LOGIC
 if (mode === "dark") {
   enableDarkMode();
-  light.textContent = "Dark";
+  light.textContent = "Light";
 } else {
   enableLightMode();
-  light.textContent = "Light";
+  light.textContent = "Dark";
 }
