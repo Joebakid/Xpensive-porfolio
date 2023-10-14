@@ -147,6 +147,14 @@ p {
   background-color: rgb(156, 183, 235);
 }
 
+.main-content__get-started {
+  transition: all 0.5s ease-in;
+}
+
+.main-content__get-started:hover {
+  color: #444;
+}
+
 .footer-text {
   width: 100%;
 }
