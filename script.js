@@ -3,8 +3,6 @@ const body = document.querySelector("body");
 const bar = document.querySelectorAll(".bar-tech");
 const mode = localStorage.getItem("mode"); //STORE USER PREFERNCE IN BROWSER
 
-//LOCAL STORAGE LOGIC
-
 //LIGHT-MODE FUNC
 function enableLightMode() {
   body.style.background = "white";
@@ -38,8 +36,11 @@ function toggle() {
   }
 }
 
+//LOCAL STORAGE LOGIC
 if (mode === "dark") {
   enableDarkMode();
+  light.textContent = "Dark";
 } else {
   enableLightMode();
+  light.textContent = "Light";
 }
