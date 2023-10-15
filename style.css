@@ -195,7 +195,10 @@ p {
   display: block;
   width: 100px;
   height: 100px;
-  padding: 10px;
+  /* padding: 50px; */
+  /* opacity: 0.8; */
+  /* border: 0.5px solid #b1afaf; */
+  /* border-radius: 50%; */
 }
 
 /* RESPONSIVENESS- DESKROP */
