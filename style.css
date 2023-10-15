@@ -32,14 +32,21 @@ p {
 
 .nav-bar {
   padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  opacity: 1;
+  cursor: pointer;
 }
 
 .nav-bar__wrapper {
   visibility: visible;
   display: flex;
   justify-content: end;
-  align-items: center;
+  /* align-items: center; */
   gap: 25px;
+  transition: opacity 0.5s ease-in 0.5s;
 }
 
 .nav-bar__item {
@@ -184,6 +191,13 @@ p {
 .dark-mode {
   visibility: hidden;
   display: none;
+}
+
+.main-card-icon-energy {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
 
 /* RESPONSIVENESS- DESKROP */

@@ -7,8 +7,6 @@ const bars = document.querySelectorAll(".bar");
 const hamburgerMenu = document.querySelector("hamburger__wrapper");
 const hamburger = document.querySelector(".hamburger");
 const navBar = document.querySelector(".nav-bar__wrapper");
-const navSlide = document.querySelector(".nav-slide");
-
 //LIGHT-MODE FUNC
 function enableLightMode() {
   body.style.background = "white";
