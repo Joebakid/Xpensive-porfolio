@@ -32,12 +32,10 @@ p {
 
 .nav-bar {
   padding-bottom: 40px;
+  padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-
-  opacity: 1;
-  cursor: pointer;
 }
 
 .nav-bar__wrapper {
