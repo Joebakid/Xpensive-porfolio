@@ -201,6 +201,48 @@ p {
   /* border-radius: 50%; */
 }
 
+/* PROJECT */
+
+.projects {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project_title {
+  color: #444;
+  margin: 20px 0;
+}
+
+.peoject_link {
+  color: inherit;
+  text-decoration: none;
+  background-color: #141313;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.project__subheading {
+  margin: 20px 0;
+}
+
+.project {
+  background-color: rgb(138, 216, 192);
+  color: aliceblue;
+  padding: 30px 30px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.color-1 {
+  background-color: rgb(243, 154, 142);
+  color: aliceblue;
+  padding: 30px 30px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
 /* RESPONSIVENESS- DESKROP */
 @media screen and (min-width: 1200px) {
   .container {
