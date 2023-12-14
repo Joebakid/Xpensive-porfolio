@@ -141,7 +141,8 @@ p {
 
 .main__card-general {
   background-color: rgb(138, 216, 192);
-  opacity: 0.758526;
+  /* opacity: 0.758526; */
+  /* transform: scale(0.4); */
   /* transform: scale(0.879263) translateZ(0px); */
   padding: 30px 30px 150px 30px;
   border-radius: 30px;
@@ -149,6 +150,7 @@ p {
   font-weight: bold;
   font-size: 30px;
   margin: 30px 0;
+  overflow: hidden;
 }
 
 .bg-color-card-second {
@@ -203,44 +205,17 @@ p {
 
 /* PROJECT */
 
-.projects {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.project_title {
-  color: #444;
-  margin: 20px 0;
-}
-
-.peoject_link {
-  color: inherit;
+.btn {
   text-decoration: none;
-  background-color: #141313;
-  padding: 5px;
-  border-radius: 6px;
+  background-color: rgb(19, 172, 124);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  /* margin: 100px 0; */
 }
 
-.project__subheading {
-  margin: 20px 0;
-}
-
-.project {
-  background-color: rgb(138, 216, 192);
-  color: aliceblue;
-  padding: 30px 30px;
-  display: inline-block;
-  border-radius: 15px;
-}
-
-.color-1 {
-  background-color: rgb(243, 154, 142);
-  color: aliceblue;
-  padding: 30px 30px;
-  display: inline-block;
-  border-radius: 15px;
+.project-description {
+  margin-bottom: 20px;
 }
 
 /* RESPONSIVENESS- DESKROP */
