@@ -57,3 +57,11 @@ if (mode === "dark") {
   enableLightMode();
   light.textContent = "Dark";
 }
+
+const imgProjectOverlay = document.querySelectorAll(".project-work-img");
+
+imgProjectOverlay.forEach((img) => {
+  img.addEventListener("click", () => {
+    console.log("click");
+  });
+});
