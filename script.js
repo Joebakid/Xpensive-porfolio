@@ -59,9 +59,25 @@ if (mode === "dark") {
 }
 
 const imgProjectOverlay = document.querySelectorAll(".project-work-img");
+const projectImagesContainer = document.querySelector(".project-images");
 
 imgProjectOverlay.forEach((img) => {
-  img.addEventListener("click", () => {
-    console.log("click");
+  img.addEventListener("click", (e) => {
+    if (e.target.tagName === "IMG") {
+      img.classList.add("overlay");
+    } else if (e.target.tagName !== "IMG") {
+      img.classList.remove("overlay");
+    }
   });
+});
+
+// Add event listener to detect clicks outside overlay
+window.addEventListener("click", (e) => {
+  // Check if the clicked element is not part of the overlay
+  if (!e.target.classList.contains("overlay")) {
+    // Remove overlay from all elements with class project-work-img
+    imgProjectOverlay.forEach((img) => {
+      img.classList.remove("overlay");
+    });
+  }
 });

@@ -24,6 +24,7 @@
   width: 90%;
   margin: 0 auto;
   padding: 20px 0px;
+  position: relative;
 }
 
 p {
@@ -233,6 +234,22 @@ p {
   width: 400px;
   height: 400px;
   cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /* RESPONSIVENESS- DESKROP */
